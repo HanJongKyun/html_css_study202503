@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 10px;
+      }
+
+      div {
+        border: 2px solid black;
+      }
+      /* em은 자신의 font-size 값의 *배수를 갖음 ex(60em = 60 * 20 = 1200px)  */
+      .root {
+        font-size: 20px;
+        width: 60em;
+      }
+      /* width: 1200px %50 = 600px, font-size: 20px(부모) * 2em = 40px */
+      .parent {
+        width: 50%;
+        font-size: 2em;
+      }
+      /* rem: html((16px:기본값) 변경하면 그값)의 font-size를 따라감 */
+      .child {
+        width: 30%;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="root">
+      ROOT
+      <div class="parent">
+        PARENT
+        <div class="child">CHILD1</div>
+        <div class="child">CHILD2</div>
+      </div>
+    </div>
+  </body>
+</html>
