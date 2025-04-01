@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <style>
       .container {
         width: 700px;
@@ -21,6 +22,29 @@
         border: 4px dashed orange;
         border-radius: 10px;
         font-size: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .item2 {
+        align-self: flex-end;
+      }
+
+      .item4 {
+        align-self: flex-start;
+      }
+
+      .item6 {
+        align-self: baseline;
+      }
+
+      .item8 {
+        height: auto;
+        /* stretch를 사용할 때는 height가 없거나 auto여야 합니다.
+        그래야 쭉 늘려줘요. (행의 높이만큼) */
+        align-self: stretch;
       }
     </style>
   </head>
